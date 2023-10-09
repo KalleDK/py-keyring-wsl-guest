@@ -1,0 +1,23 @@
+[project]
+name = "keyring-wsl-client"
+version = "0.1.1"
+description = "Keyring proxy for wsl (client part)"
+authors = [
+    {name = "Kalle M. Aagaard", email = "git@k-moeller.dk"},
+]
+dependencies = [
+    "keyring>=24.2.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.urls]
+Repository = "https://github.com/KalleDK/py-keyring-wsl-guest"
+
+[project.entry-points."keyring.backends"]
+WSLProxyBackend = "keyring_wsl_client:WSLProxyBackend"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
