@@ -2,7 +2,7 @@
 
 ## Install global
 pipx install keyring
-pipx inject keyring-wsl-guest
+pipx inject keyring-wsl-client
 
 ## Install with PDM
-pipx inject pdm keyring-wsl-guest
+pipx inject pdm keyring-wsl-client
